@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,9 +11,11 @@ public class HealthCollectible : MonoBehaviour
 
         if (controller != null)
         {
-            controller.ChangeHealth(1);
-            Destroy(gameObject);
+            if (controller.health < controller.maxHealth)
+            {
+                controller.ChangeHealth(1);
+                Destroy(gameObject);
+            }
         }
     }
-
 }
