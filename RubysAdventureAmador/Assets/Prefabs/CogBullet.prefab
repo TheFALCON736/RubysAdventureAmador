@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5985912592397597681}
   - component: {fileID: 945549290}
   - component: {fileID: 945549289}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CogBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
